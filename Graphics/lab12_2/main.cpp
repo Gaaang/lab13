@@ -180,7 +180,7 @@ void init(void)
 
 	// Read our .obj file
 	std::vector<glm::vec3> vertices;
-	loadOBJ("cube_obj.txt"/*"rotate_obj.txt"*/, vertices);
+	loadOBJ("cube.obj", vertices);
 	indexVBO(vertices, indices, indexed_vertices);
 	gen_colors(vertices.size());
 }
